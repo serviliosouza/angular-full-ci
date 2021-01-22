@@ -4,16 +4,6 @@ author: colbyhill21
 branding:
   icon: 'terminal'
   color: 'red'
-inputs:
-  testcommand:
-    description: Command to run tests on your project, do not prepend with "npm", it is already included.
-    required: true
-  mocha:
-    description: Set to true in order to run mocha tests. This option will install mocha on the image.
-    required: false
-  working_directory:
-    description: Working directory to execute the workflow in
-    required: false
 runs:
   using: docker
   image: Dockerfile
